@@ -58,7 +58,7 @@ class BookFactory {
         }
         return match10 || match13
     }
-    
+    //获取全部数据
     func getAllBook() throws -> [VMBook] {
         return try repository.getAll()
     }
