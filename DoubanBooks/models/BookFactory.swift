@@ -8,6 +8,7 @@
 import CoreData
 import Foundation
 class BookFactory {
+    //试试测试
     var repository: Repository<VMBook>
     private static var instance: BookFactory?
     
@@ -56,6 +57,7 @@ class BookFactory {
                 match13 = try repository.isEntityExists([VMBook.colIsbn10], keyword: isbn13)
             }
         }
+        
         return match10 || match13
     }
     //获取全部数据
